@@ -1,0 +1,8 @@
+audio-transcribe-frontend/node_modules
+audio-transcribe-frontend/dist
+*.class
+*.jar
+target/
+.idea/
+*.iml
+.env
