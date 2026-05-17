@@ -18,10 +18,8 @@ import java.io.File;
 
 @RestController
 @RequestMapping("/api/transcribe")
-@CrossOrigin(origins = {
-        "https://ai-audio-transcribe-frontend.vercel.app",
-        "https://ai-audio-transcribe-frontend-7en5tjb74-itsaryanjain1.vercel.app"
-})public class TranscriptionController {
+@CrossOrigin(origins = "*")
+public class TranscriptionController {
 
     private final OpenAiAudioTranscriptionModel transcriptionModel;
     private final RestTemplate restTemplate;           // ✅ Fix 3: single shared instance
