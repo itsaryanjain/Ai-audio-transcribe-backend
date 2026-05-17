@@ -18,7 +18,7 @@ import java.io.File;
 
 @RestController
 @RequestMapping("/api/transcribe")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://ai-audio-transcribe-frontend.vercel.app")
 public class TranscriptionController {
 
     private final OpenAiAudioTranscriptionModel transcriptionModel;
