@@ -18,7 +18,7 @@ import java.io.File;
 
 @RestController
 @RequestMapping("/api/transcribe")
-@CrossOrigin(origins = "*")
+
 public class TranscriptionController {
 
     private final OpenAiAudioTranscriptionModel transcriptionModel;
