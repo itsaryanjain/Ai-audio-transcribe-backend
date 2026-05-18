@@ -384,7 +384,7 @@ export default function AudioUploader() {
       setLoading(true);
       setError("");
       setText("");
-      const res = await axios.post("https://ai-audio-transcribe-backend.onrender.com/api/transcribe", formData);
+      const res = await axios.post("https://ai-audio-transcribe-backend-1.onrender.com/api/transcribe", formData);
       setText(res.data);
     } catch (e) {
       console.error(e);
